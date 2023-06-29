@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+
+	font-size: 15px;
+	color: #fff;
+	line-height: 1.6;
+}
+
+*,
+*:after,
+*:before {
+ 	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.intro {
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+
+	background: url("../assets/wallpaper.png");
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.icon-button {
+	margin-inline: 200px;
+	width: 100px;
+	height: 40px;
+	border: none;
+ 	border-radius: 10px;
+	background-color: rgba(55, 0, 255, 1);
+  	color: #fff;
+  	font-family: 'Poppins', sans-serif;
+}
