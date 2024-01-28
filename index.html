@@ -6,19 +6,34 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-	<title>XoriaDev</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<title>Финансовая грамотность</title>
 </head>
 
-<body>
-	<div class="intro">
-		<div class="container">
-			<h1>XoriaDev</h1>
-			<button class="icon-button" type="button">
-		  		Click me
-			</button>
-		</div>
-	</div>
-</body>
+<body id="background">
 
+	<intro>
+		<main>Финансовая грамотность
+			<button id="btn" class="mainb"></button>
+		</main>
+		<script>
+
+			var bg = document.getElementById("background");
+			var btn = document.getElementById("btn");
+			btn.addEventListener("click", function() {
+				if (bg.isClicked){
+					bg.isClicked = false
+					bg.classList.remove("active");
+				} else {
+					bg.isClicked = true
+					bg.classList.add("active");
+				}
+			});
+		</script>
+		<blockquote><b>Финансовая грамотность</b> — это усвоенные сведения и умения, с помощью которых человек со знанием процессов и результата управляет собственными деньгами: считает заработки и расходы, следит, чтобы эти показатели были в равновесии, а значит, - зарабатывает больше, чем тратит, создает накопления, чтобы добиться определенных целей, а также на экстренные случаи, имеет доходы от вложения свободных средств, находит полезные экономические данные и использует их, чтобы упрочить свое положение, отличает финансовые услуги, советы специалистов от мошенничества. Этому реально научиться.</blockquote>
+		<blockquote><b>Акция</b> — это ценная бумага, которую выпускает акционерное общество, другими словами — компания-эмитент. Все инвесторы, которые купили акции, стали совладельцами компании. Акция как раз и подтверждает, что у ее владельца есть доля в компании, пусть даже совсем маленькая.</blockquote>
+		<blockquote><b>Облигация</b> — это долговая ценная бумага, по которой эмитент (тот, кто выпускает облигации) получает деньги в долг от инвестора. Взамен эмитент гарантирует, что выплатит инвестору в определенный срок стоимость облигации (номинал) и процент за пользование средствами (купонный доход) в будущем. Это что-то вроде кредита: компания или государство ищет деньги на свои нужды, а инвестор их одалживает под проценты.</blockquote>
+	</intro>
+
+</body>
 </html>
